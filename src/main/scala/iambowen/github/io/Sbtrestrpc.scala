@@ -3,8 +3,8 @@ package iambowen.github.io
 import sbt._
 import Keys._
 
-object Sbtrestrpc extends Plugin {
-  override lazy val settings = Seq(
+object Sbtrestrpc extends AutoPlugin{
+  override lazy val buildSettings = Seq(
     commands ++= Seq(
       sample
     )
@@ -15,4 +15,3 @@ object Sbtrestrpc extends Plugin {
     state
   }
 }
-
